@@ -52,7 +52,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1
+    android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1 \
+    fingerprint.msm8996
 
 # Init
 PRODUCT_COPY_FILES += \

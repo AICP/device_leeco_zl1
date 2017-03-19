@@ -1,45 +1,54 @@
 [
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_device_leeco_msm8996-common",
-   "target_path": "device/leeco/msm8996-common"
+   "target_path": "device/leeco/msm8996-common",
    "branch":      "cm-14.1"
  },
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_frameworks",
    "target_path": "vendor/nxp-nfc/opensource/frameworks",
-    "branch":     "cm-14.1"
+   "branch":     "cm-14.1"
  },
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_libnfc-nci",
    "target_path": "vendor/nxp-nfc/opensource/libnfc-nci",
-    "branch":     "cm-14.1"
+   "branch":     "cm-14.1"
  },
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_vendor_nxp-nfc_opensource_Nfc",
    "target_path": "vendor/nxp-nfc/opensource/Nfc",
    "branch":      "cm-14.1"
  },
  {
-   "repository":  "TheMuppets/proprietary_vendor_qcom_binaries",
-   "target_path": "vendor/qcom/binaries",
-   "branch":      "cm-14.1"
- },
- {
+   "remote":      "github",
    "repository":  "LineageOS/android_device_qcom_common",
    "target_path": "device/qcom/common",
    "branch":      "cm-14.1"
  },
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_kernel_leeco_msm8996",
-   "target_path": "kernel/leeco/msm8996"
+   "target_path": "kernel/leeco/msm8996",
    "branch":      "cm-14.1"
  },
  {
+   "remote":      "github",
    "repository":  "LineageOS/android_external_stlport",
    "target_path": "external/stlport",
    "branch":      "cm-14.1"
  },
  {
+   "remote":      "github",
+   "repository":  "LineageOS/android_packages_resources_devicesettings",
+   "target_path": "packages/resources/devicesettings",
+   "branch":      "cm-14.1"
+ },
+ {
+   "remote":      "github",
    "repository":  "TheMuppets/proprietary_vendor_leeco",
    "target_path": "vendor/leeco",
    "branch":      "cm-14.1"

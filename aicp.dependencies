@@ -1,6 +1,6 @@
 [
  {
-   "repository":  "AICP/android_device_leeco_msm8996-common",
+   "repository":  "AICP/device_leeco_msm8996-common",
    "target_path": "device/leeco/msm8996-common",
    "branch":      "n7.1"
  },
@@ -25,7 +25,7 @@
    "branch":      "cm-14.1"
  },
  {
-   "repository":  "AICP/android_kernel_leeco_msm8996",
+   "repository":  "AICP/kernel_leeco_msm8996",
    "target_path": "kernel/leeco/msm8996",
    "branch":      "n7.1"
  },

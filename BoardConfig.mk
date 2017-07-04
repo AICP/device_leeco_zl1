@@ -59,6 +59,8 @@ BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
+PRODUCT_BOOT_JARS += org.simalliance.openmobileapi
+
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 

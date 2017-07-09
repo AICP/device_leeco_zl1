@@ -88,5 +88,8 @@ persist.service.adb.enable=1 \
 persist.service.debuggable=1 \
 persist.sys.usb.config=mtp,adb
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hwui.text_large_cache_height=2048
+
 # msm8996-common
 $(call inherit-product, device/leeco/msm8996-common/msm8996.mk)

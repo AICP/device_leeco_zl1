@@ -82,12 +82,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:system/etc/sensors/hals.conf \
     $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf
 
-# ADB
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-persist.service.adb.enable=1 \
-persist.service.debuggable=1 \
-persist.sys.usb.config=mtp,adb
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hwui.text_large_cache_height=2048
 

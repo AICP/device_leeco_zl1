@@ -43,6 +43,11 @@
    "repository":  "AICP/proprietary_vendor_leeco",
    "target_path": "vendor/leeco",
    "branch":      "n7.1"
- }
+ },
+ {
+    "repository":  "omnirom/android_packages_apps_SnapdragonCamera",
+    "target_path": "packages/apps/SnapdragonCamera",
+    "branch":      "android-7.1"
+  }
 ]
  

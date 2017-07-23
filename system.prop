@@ -34,9 +34,7 @@ ro.device.screen_res=1080 x 1920
 
  ro.HOME_APP_ADJ=1 
  ro.mot.eri.losalert.delay=1000 
- ro.config.hw_fast_dormancy=1 
  ro.ril.enable.amr.wideband=1 
- ro.config.hw_fast_dormancy=1 
  ro.config.hw_quickpoweron=true 
 
  # Miscellaneous Tweaks 
@@ -49,7 +47,6 @@ ro.device.screen_res=1080 x 1920
  ro.telephony.sms_segment_size=160 
  persist.telephony.support.ipv6=1 
  persist.telephony.support.ipv4=1 
- ro.config.hw_fast_dormancy=1 
  persist.sys.shutdown.mode=hibernate 
  ro.config.hw_power_saving=true 
  ro.media.enc.hprof.vid.fps=65 

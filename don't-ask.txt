@@ -1,0 +1,157 @@
+[CENTER][COLOR="White"].
+
+[CODE]/*
+* Your warranty is now void.
+*
+* I am not responsible for bricked devices, dead SD cards,
+* thermonuclear war, or you getting fired because the alarm app failed. Please
+* do some research if you have any concerns about features included in this ROM
+* before flashing it! YOU are choosing to make these modifications, and if
+* you point the finger at me for messing up your device, I will laugh at you. Hard. A lot.
+*/[/CODE]
+.
+.[/COLOR]
+[CENTER][IMG]http://i.imgur.com/GhQyhHk.png[/IMG][/CENTER]
+[SIZE="7"][B][CENTER]AICP[/CENTER][/B][/SIZE]
+[SIZE="1"][B][CENTER]Android Ice Cold Project[/CENTER][/B][/SIZE]
+
+AICP is known by everyone as Ice Cold Project that started on Desire HD and since then evolved into a mature ROM with the BEST community you can find!!!
+
+Until Lollipop,the rom has always been AOKP based. Unfortunately, since AOKP either stopped development or will make a comeback later this year, we changed our base to CM when it comes to hardware, drivers and some features.
+
+If there are any bugs, either we will sort them or CM team if it concerns their modifications. This rom isn't CM supported so no need to report errors or bugs to them!!
+[COLOR="White"].
+.
+.
+.
+.[/COLOR]
+[CENTER][IMG]http://i.imgur.com/3ueQ7DH.png[/IMG][/CENTER]
+[COLOR=DimGray][B]In the beginning we would like to thank:[/B]
+[LIST]
+[*]CM team
+[*]maxwen
+[*]SlimBean rom team
+[*]CarbonRom team
+[*]LiquidSmooth rom team
+[*]Omni rom team
+[*]DU team
+[*][B]Community[/B]
+[/LIST]
+
+
+[CENTER][IMG]http://i.imgur.com/ISn0uXd.png[/IMG][/CENTER]
+[LIST]
+[*][B]@LorD ClockaN[/B]
+[*][B]@zipsnet[/B]
+[*][B]@n3ocort3x[/B]
+[*][B]@semdoc[/B]
+[*][B]@eyosen[/B]
+[*][B]@alienmind[/B]
+[*][B]@Chezbel[/B]
+[*][B]@Drgravy[/B]
+[*][B]@eboye[/B]
+.
+.
+.
+
+[/LIST]
+[CENTER]
+[IMG]http://i.imgur.com/3U7XWsV.png[/IMG][/CENTER]
+[U][I][SIZE=3][COLOR=DimGray][B] official releases: [url]http://dwnld.aicp-rom.com/?device=zl1[/url]
+[/I][/U][/B]
+Test builds:[URL]https://androidfilehost.com/?w=files&flid=163292[/URL]
+
+Google Apps:
+[url="https://www.androidfilehost.com/?w=files&flid=171927&sort_by=date&sort_dir=DESC"]Beans gapps[/url]
+Or 
+[url="http://opengapps.org"]open gapps [/url] (arm64 7.1 pico or nano)
+
+[B]TWRP-Recovery[/B]:
+[url]https://forum.xda-developers.com/le-pro3/development/recovery-twrp-recovery-lezl1-t3559910[/url]
+
+BlackScreen kernel builds (more info in the [URL="https://forum.xda-developers.com/showpost.php?p=71491169&postcount=4"]fourth post[/URL])
+[URL="https://www.androidfilehost.com/?w=files&flid=166446"]https://www.androidfilehost.com/?w=files&flid=166446[/URL] 
+
+Button Remap 
+[URL]https://www.androidfilehost.com/?fid=817550096634760043[/URL]
+
+SmartcardService
+[URL]https://www.androidfilehost.com/?fid=673368273298973070[/URL]
+[/COLOR][/SIZE]
+
+AKT Profiles:
+[url]https://forum.xda-developers.com/oneplus-3/how-to/advanced-interactive-governor-tweaks-t3476589[/url]
+-Here you can check the most voted profiles and how it works
+
+[CENTER][IMG]http://i.imgur.com/b5b2bXK.png[/IMG][/CENTER]
+[LIST]
+[*]Low mic volume when using a headset
+[*]You tell... :P
+[/LIST]
+[/COLOR]
+Things that work
+1. rotation
+2. wifi
+3. setup wizard
+4. ril
+5. IR
+6. Nightlight
+7. Camera
+8. 4k video recording
+9. Netflix 
+10. Snapchat
+11. Volte
+12. GPS
+13. pretty much everything
+
+[CENTER][IMG]http://i.imgur.com/kfCXFCX.png[/IMG][/CENTER]
+[COLOR=DimGray]
+ The rom should contain everything you need to enjoy nougat. You are not required to install any Add Ons, simply download the latest ROM, gapps, flash it, and go!
+You are STRONGLY recommended to fully wipe your device before flashing, and if possible avoid restoring system apps and system data with Titanium Backup - these can cause stability issues that are very hard to debug. If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience strange behavior.[/COLOR]
+
+[SIZE=3][COLOR=DimGray]
+How to flash:[/SIZE]
+1. Download ROM and Gapps and transfer to device
+2. Boot into recovery (TWRP recommended)
+3. Wipe the system, cache, data, and dalvik cache
+4. Install ROM
+5. Install Gapps
+7. Reboot to system
+[/COLOR]
+
+[B]If you want to contribute to the AICP or wanna see what is being worked on/merge feel free to visit our gerrit, link is at the bottom!!![/B]
+
+
+[CENTER][IMG]http://i.imgur.com/F6DLgPu.png[/IMG][/CENTER]
+
+[B][SIZE="3"]IceColdJelly [URL="http://goo.gl/DIQPNj"]AICP G+ community[/URL][/B][/SIZE]
+
+Device trees:
+[url]https://github.com/AICP/device_leeco_zl1[/url]
+[url]https://github.com/AICP/device_leeco_msm8996-common[/url]
+
+Vendor:
+[url]https://github.com/AICP/proprietary_vendor_leeco[/url]
+
+Kernel:
+[url]https://github.com/AICP/kernel_leeco_msm8996[/url]
+[URL="https://github.com/mosimchah/android_kernel_leeco_msm8996/tree/n7.1-eas"]eas kernel[/URL]
+
+[B]ROM
+[URL="http://goo.gl/6MoXYN"]gerrit[/URL]   
+[URL="https://github.com/AICP"]github[/URL][/B]
+
+[B][U]Contributors[/U][/B]
+Special thanks to [URL="https://forum.xda-developers.com/member.php?u=3479861"]darkobas[/URL] for helping me out with development
+
+[URL="https://forum.xda-developers.com/member.php?u=2836769"]jrior001[/URL], [URL="https://forum.xda-developers.com/member.php?u=3208754"]codeworkx[/URL], [URL="https://forum.xda-developers.com/member.php?u=6227169"]mosimchah[/URL]
+[B]ROM OS Version:[/B] 7.x Nougat
+[B]ROM Kernel:[/B] Linux 3.18.x
+
+[B][U]Version Information[/U][/B]
+[B]Status:[/B] Stable
+[B]Stable Release Date:[/B] 3-26-2017
+
+[B]Created[/B] 3-19-2017
+[B]Last Updated[/B] 7-18-2017
+[/CENTER]

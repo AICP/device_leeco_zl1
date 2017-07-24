@@ -1,0 +1,201 @@
+[CENTER]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/logo_black.png[/IMG]
+
+[SIZE="7"][B]AICP[/B][/SIZE]
+[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
+
+AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago and since then evolved into a mature ROM with the BEST community you can find!!!
+
+Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM when it comes to hardware, drivers and some features.
+With the rebrand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
+
+If there are any bugs, either we will sort them out or LAOS team, if it concerns their code base. This rom isn't LAOS supported, so no need to report errors or bugs to them!!
+
+
+[CODE]#include <std_disclaimer.h>
+
+/*
+ * Your warranty is now void.
+ *
+ * We are not responsible for bricked devices, dead SD cards,
+ * thermonuclear war or you getting fired because the alarm app failed. Please
+ * do some research if you have any concerns about features included in this ROM
+ * before flashing it! YOU are choosing to make these modifications, and if
+ * you point the finger at us for messing up your device, we will laugh at you. Hard & a lot.
+ *
+ */[/CODE]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/features.png[/IMG]
+
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/FEATURES.md"]Feature list (rough Overview)[/URL]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/credits.png[/IMG]
+
+[B]In the beginning we would like to thank:[/B]
+
+LineageOS & CM (R.I.P.) team
+maxwen
+DU team
+SlimRoms team
+Resurrection Remix team
+OmniRom team
+[B]Community[/B]
+...
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/team.png[/IMG]
+
+[B]@LorD ClockaN[/B]
+[B]@zipsnet[/B]
+[B]@eyosen[/B]
+[B]@semdoc[/B]
+[B]@Drgravy[/B]
+[B]@Hashbang173[/B]
+[B]@SpiritCroc[/B]
+[B]@wartomato[/B]
+[B]@eboye[/B]
+[B]plus the rest of the crazy bunch that we call "team"[/B]
+...
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/donations.png[/IMG]
+
+We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
+[B]Thank you!![/B]
+
+[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/paypal.png[/IMG][/URL]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/downloads.png[/IMG]
+
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]12.1[/SIZE]
+[/SIZE]
+[SIZE=3][B]official releases: [url]http://dwnld.aicp-rom.com/?device=zl1[/url][/B][/SIZE]
+Test builds:[URL]https://androidfilehost.com/?w=files&flid=163292[/URL]
+
+[B]TWRP-Recovery[/B]:
+[url]https://forum.xda-developers.com/le-pro3/development/recovery-twrp-recovery-lezl1-t3559910[/url]
+
+BlackScreen kernel builds (more info in the [URL="https://forum.xda-developers.com/showpost.php?p=71491169&postcount=4"]fourth post[/URL])
+[URL="https://www.androidfilehost.com/?w=files&flid=166446"]https://www.androidfilehost.com/?w=files&flid=166446[/URL]
+
+Button Remap
+[URL]https://www.androidfilehost.com/?fid=817550096634760043[/URL]
+
+SmartcardService
+[URL]https://www.androidfilehost.com/?fid=673368273298973070[/URL]
+
+AKT Profiles:
+[url]https://forum.xda-developers.com/oneplus-3/how-to/advanced-interactive-governor-tweaks-t3476589[/url]
+-Here you can check the most voted profiles and how it works
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/changelog.png[/IMG]
+
+[SIZE=3][B]Full Changelog link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
+
+Google Apps:
+[url="https://www.androidfilehost.com/?w=files&flid=171927&sort_by=date&sort_dir=DESC"]Beans gapps[/url]
+Or
+[url="http://opengapps.org"]Open GApps [/url] (ARM64 7.1 pico or nano)
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/issues.png[/IMG]
+
+You tell... :P
+
+[U][B]Things that work[/B]
+1. rotation
+2. wifi
+3. setup wizard
+4. ril
+5. IR
+6. Nightlight
+7. Camera
+8. 4k video recording
+9. Netflix
+10. Snapchat
+11. Volte
+12. GPS
+13. pretty much everything [/U]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/instructions.png[/IMG]
+
+The ROM should contain everything you need to enjoy Android Nougat. You don't need to install any Add-Ons, simply download the latest ROM, GApps, flash it and go!
+If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
+
+It is STRONGLY recommended to fully wipe your device before flashing, and if possible avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
+If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
+
+[SIZE=3]
+How to flash:[/SIZE]
+(Again: Don't do it if you don't know it!)
+
+Download the ROM and GApps and transfer them to your device
+Boot to recovery (TWRP recommended)
+Wipe system, Cache, data and ART/Dalvik cache
+Flash ROM Zipfile
+Flash/Install GApps (optional, needed for e.g. Google Playstore to work)
+Flash/Install the root solution of choice (optional), I personnaly recommend magisk
+Reboot to system
+
+[B]The ROM has GApps persistance in between dirty flashes, so you only have to flash them once!
+The root solution should be flashed together with every OTA update (= ROM Update)![/B]
+
+[SIZE=3]
+Supported root solutions:[/SIZE]
+
+[COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk v13.x[/URL]
+
+[URL="http://www.supersu.com/download"]SuperSU[/URL] - stable and beta available (Site by CCMT that took over the the marketing from chainfire)
+[URL="https://download.chainfire.eu/supersu"]SuperSU[/URL] - direct download link for the latest SuperSU directly from the dev (chainfire)
+
+[URL="https://download.lineageos.org/extras"]Lineage SU-addon[/URL] (check your needed version: 14.1 arm or arm64) -> the removal zip is available here too.
+[/COLOR]
+
+[U][B]KERNEL:[/B][/U]
+The kernel in this ROM follows Omni source with many additions/changes
+
+[U][B]PREREQUISITE FOR OTA:[/B][/U]
+To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
+You can still use LAOS recovery and OTA app, but you will need to download the zip file and flash it manually from within your recovery. Zip gets saved in the "AICP_ota" folder on your internal storage.
+Please be sure that you are on the latest TWRP recovery.
+
+[B]If you want to contribute to the AICP or wanna see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/sources.png[/IMG]
+
+[B][SIZE="3"]IceColdJelly [URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
+
+[B]Kernel source:[/B]
+[url]https://github.com/AICP/kernel_leeco_msm8996[/url]
+
+Device trees:
+[url]https://github.com/AICP/device_leeco_zl1[/url]
+[url]https://github.com/AICP/device_leeco_msm8996-common[/url]
+
+Vendor:
+[url]https://github.com/AICP/proprietary_vendor_leeco[/url]
+
+[URL="https://github.com/mosimchah/android_kernel_leeco_msm8996/tree/n7.1-eas"]eas kernel[/URL]
+
+[B]ROM & Additional links:
+[URL="http://gerrit.aicp-rom.com/"]Gerrit Code Review[/URL]
+[URL="https://github.com/AICP"]Github[/URL][/B]
+
+[B][U]Contributors[/U][/B]
+Special thanks to [URL="https://forum.xda-developers.com/member.php?u=3479861"]darkobas[/URL] for helping me out with development, and for all his work on our device
+[URL="https://forum.xda-developers.com/member.php?u=2836769"]jrior001[/URL], [URL="https://forum.xda-developers.com/member.php?u=3208754"]codeworkx[/URL], [URL="https://forum.xda-developers.com/member.php?u=7885756"]villarleg[/URL], [URL="https://forum.xda-developers.com/member.php?u=6227169"]mosimchah[/URL]
+[B]ROM OS Version:[/B] 7.1.2 Nougat
+[B]ROM Kernel:[/B] Linux 3.18.x
+
+[B][U]Version Information[/U][/B]
+[B]Status:[/B] Stable
+[B]Stable Release Date:[/B] 3-26-2017
+
+[B]Created[/B] 3-19-2017
+[B]Last Updated[/B] 7-18-2017
+
+You want to see a normal night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/dev_office.png"]here[/URL]!!
+[/CENTER]

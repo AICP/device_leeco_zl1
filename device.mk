@@ -84,9 +84,10 @@ PRODUCT_COPY_FILES += \
 
 # ADB
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-persist.service.adb.enable=1 \
-persist.service.debuggable=1 \
-persist.sys.usb.config=mtp,adb
+    persist.service.adb.enable=1 \
+    persist.service.debuggable=1 \
+    persist.sys.usb.config=mtp,adb \
+    ro.adb.secure=0
 
 # msm8996-common
 $(call inherit-product, device/leeco/msm8996-common/msm8996.mk)

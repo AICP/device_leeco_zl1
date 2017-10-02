@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remove-project name="AICP/kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="aicp" revision="o8.0" />
+  <remove-project path="hardware/qcom/audio-caf/msm8996" name="LineageOS/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="lineage-15.0-caf-8996" />
+  <remove-project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="lineage-15.0-caf-8996" />
+  <remove-project path="hardware/qcom/media-caf/msm8996" name="LineageOS/android_hardware_qcom_media" groups="qcom,pdk" revision="lineage-15.0-caf-8996" />
+  <project name="mosimcah/kernel_leeco_msm8996" path="kernel/leeco/msm8996" remote="github" revision="o8.0-test" /> 
+  <project path="hardware/qcom/audio-caf/msm8996" name="GZOSP/hardware_qcom_audio" groups="qcom,qcom_audio,pdk" revision="8.0-caf-8996" />
+  <project path="hardware/qcom/display-caf/msm8996" name="GZOSP/hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="8.0-caf-8996" />
+  <project path="hardware/qcom/media-caf/msm8996" name="GZOSP/hardware_qcom_media" groups="qcom,pdk" revision="8.0-caf-8996" />
+</manifest>

@@ -50,8 +50,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26144878592
 
 PRODUCT_BOOT_JARS += org.simalliance.openmobileapi
 
-# CM Hardware
-BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/cmhw
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += $(DEVICE_PATH)/lineagehw
 
 # SELinux
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy

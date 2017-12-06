@@ -14,3 +14,11 @@ ro.nfc.port=I2C
 
 # Fingerprint
 persist.qfp=false
+
+# Hardware Info
+ro.device.chipset=Qualcomm MSM8996 Snapdragon 821
+ro.device.cpu=Quad-core (2x2.35 GHz Kryo & 2x2.19 GHz Kryo)
+ro.device.gpu=Adreno 530
+ro.device.rear_cam=16 MP
+ro.device.front_cam=8 MP
+ro.device.screen_res=1080 x 1920

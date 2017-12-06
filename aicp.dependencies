@@ -1,0 +1,7 @@
+[
+ {
+   "repository":  "AICP/device_leeco_msm8996-common",
+   "target_path": "device/leeco/msm8996-common",
+   "branch":      "o8.1"
+ }
+]

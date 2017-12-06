@@ -17,13 +17,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from oneplus3 device
+# Inherit from zl1 device
 $(call inherit-product, device/leeco/zl1/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common aicp stuff
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_zl1
+PRODUCT_NAME := aicp_zl1
 PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco
@@ -41,3 +41,12 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 TARGET_VENDOR := leeco
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Moshe Barash (mosimchah)"
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk

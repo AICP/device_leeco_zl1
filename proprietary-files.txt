@@ -421,8 +421,8 @@ lib64/libfpnav5118m.so
 lib64/libfpservice5118m.so
 lib64/hw/fingerprint.msm8996.so:lib64/hw/fingerprint.vendor.msm8996.so
 
-# NFC firmware
-vendor/firmware/libpn548ad_fw.so
+# NFC firmware - from https://github.com/NXP/nfc-NXPNFCC_FW
+vendor/firmware/libpn548ad_fw.so|378cbceab979358f92ca64612d2c7ee7
 
 # Radio - MBN
 etc/firmware/modem_pr/mbn_upgrade_info

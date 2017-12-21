@@ -12,7 +12,7 @@
  {
    "repository":  "AICP/kernel_leeco_msm8996",
    "target_path": "kernel/leeco/msm8996",
-   "branch":      "o8.0"
+   "branch":      "o8.1"
  },
  {
    "repository":  "LineageOS/android_external_stlport",

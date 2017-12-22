@@ -2349,8 +2349,8 @@
         <ctl name="Boost Output Voltage" value="9V" />
         <ctl name="Left Feedback Enable" value="ON" />
         <ctl name="Right Feedback Enable" value="ON" />
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="73" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="48" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2378,8 +2378,8 @@
         <ctl name="Amp DSP Enable" value="1" />
         <ctl name="Amp Volume Location" value="0" />
         -->
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="66" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="48" />
         <ctl name="Left Channel Enable" value="0" />
         <ctl name="Right Channel Enable" value="1" />
     </path>
@@ -2396,8 +2396,8 @@
         <ctl name="Amp DSP Enable" value="1" />
         <ctl name="Amp Volume Location" value="0" />
         -->
-        <ctl name="Speaker Volume" value="5" />
-        <ctl name="Digital Gain" value="66" />
+        <ctl name="Speaker Volume" value="4" />
+        <ctl name="Digital Gain" value="48" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
     </path>

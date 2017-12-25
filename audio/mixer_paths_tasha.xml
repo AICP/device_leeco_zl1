@@ -2353,6 +2353,10 @@
         <ctl name="Digital Gain" value="48" />
         <ctl name="Left Channel Enable" value="1" />
         <ctl name="Right Channel Enable" value="1" />
+        <ctl name="DRE EN" value="0" />
+        <ctl name="Ramp Switch" value="0" />
+        <ctl name="Amp DSP Enable" value="1" />
+        <ctl name="Amp Volume Location" value="0" />
     </path>
 
     <path name="voice-speaker-stereo-nb">

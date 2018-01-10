@@ -107,11 +107,6 @@ persist.nfc.smartcard.config=SIM1,SIM2,eSE1
  profiler.force_disable_err_rpt=1 
  profiler.force_disable_ulog=1 
 
- # Scrolling Responsiveness 
-
- windowsmgr.max_events_per_sec=90 
- persist.cust.tel.eons=1 
-
  # Power Saving Tweaks 
 
  ro.ril.disable.power.collapse=1 
@@ -143,8 +138,6 @@ persist.nfc.smartcard.config=SIM1,SIM2,eSE1
  # Performance 
 
  debug.composition.type=gpu 
- ro.max.fling_velocity=20000 
- ro.min.fling_velocity=18000 
  debug.performance.tuning=1 
  debug.kill_allocating_task=0 
  debug.overlayui.enable=1 

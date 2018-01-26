@@ -26,6 +26,8 @@
 #
 
 on init
+    export LD_SHIM_LIBS "/system/vendor/lib/libmmcamera_ppeiscore.so|libshims_camera.so:/system/bin/mm-qcamera-daemon|libshims_qcamera-daemon.so"
+
     #No overclock
     write /sys/devices/system/cpu/cpu2/cpufreq/scaling_max_freq 2342400
     write /sys/devices/system/cpu/cpu3/cpufreq/scaling_max_freq 2342400

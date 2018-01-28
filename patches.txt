@@ -4,3 +4,17 @@
 198775 https://review.lineageos.org hardware/interfaces
 54436 http://gerrit.aicp-rom.com bionic
 198050 https://review.lineageos.org packages/apps/Nfc
+#AV
+57502 http://gerrit.aicp-rom.com frameworks/av
+57469 http://gerrit.aicp-rom.com frameworks/av
+57463 http://gerrit.aicp-rom.com frameworks/av
+#Base
+58402 http://gerrit.aicp-rom.com frameworks/base
+58405 http://gerrit.aicp-rom.com frameworks/base
+58408 http://gerrit.aicp-rom.com frameworks/base
+#build
+57700 http://gerrit.aicp-rom.com build/make
+#AppOps
+57187 http://gerrit.aicp-rom.com packages/apps/Settings
+57193 http://gerrit.aicp-rom.com packages/apps/AicpExtras
+57190 http://gerrit.aicp-rom.com frameworks/base

@@ -5,3 +5,5 @@
 198050 https://review.lineageos.org packages/apps/Nfc
 #build
 57700 http://gerrit.aicp-rom.com build/make
+#fix keydisabler
+59740 http://gerrit.aicp-rom.com frameworks/base

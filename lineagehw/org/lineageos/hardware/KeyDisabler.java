@@ -33,14 +33,19 @@ public class KeyDisabler {
     private static String CONTROL_PATH = "/proc/touchpanel/capacitive_keys_enable";
 
     public static boolean isSupported() {
-        return FileUtils.isFileWritable(CONTROL_PATH);
+        return FileUtils.isFileWritable(CONTROL_PATH) &&
+                   FileUtils.isFileWritable(FPC_PATH);
     }
 
     public static boolean isActive() {
-        return FileUtils.readOneLine(CONTROL_PATH).equals("0");
+        return FileUtils.readOneLine(CONTROL_PATH).equals("1") ||
+                   FileUtils.readOneLine(FPC_PATH).equals("1");
     }
 
     public static boolean setActive(boolean state) {
-        return FileUtils.writeLine(CONTROL_PATH, (state ? "0" : "1"));
+        String value = state ? "1" : "0";
+        boolean control = FileUtils.writeLine(CONTROL_PATH, value);
+
+        return control;
     }
 }

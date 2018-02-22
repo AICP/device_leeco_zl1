@@ -5,7 +5,3 @@
 57700 http://gerrit.aicp-rom.com build/make
 59740 http://gerrit.aicp-rom.com frameworks/base
 205403 https://review.lineageos.org hardware/qcom/power -f
-61348 http://gerrit.aicp-rom.com frameworks/base
-61360 http://gerrit.aicp-rom.com frameworks/base
-61363 http://gerrit.aicp-rom.com frameworks/base
-61354 http://gerrit.aicp-rom.com packages/apps/AicpExtras

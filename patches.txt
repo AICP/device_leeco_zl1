@@ -1,5 +1,4 @@
 # We cant wait for all the patches be merged
 # so we pull the patches from gerrit.
 #
-57700 http://gerrit.aicp-rom.com build/make
 205403 https://review.lineageos.org hardware/qcom/power -f

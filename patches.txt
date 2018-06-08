@@ -2,3 +2,6 @@
 # so we pull the patches from gerrit.
 #
 205403 https://review.lineageos.org hardware/qcom/power -f
+
+68342/1 http://gerrit.aicp-rom.com packages/apps/Settings
+68345/1 http://gerrit.aicp-rom.com packages/apps/Settings

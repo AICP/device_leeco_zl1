@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
 
 # Libshims
 PRODUCT_PACKAGES += \
+    fakelogprint \
     libshims_gxfpd
 
 # NFC

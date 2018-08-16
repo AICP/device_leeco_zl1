@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "biometrics.fingerprint@2.0-service.leeco_zl1"
+#define LOG_TAG "biometrics.fingerprint@2.0-service"
 
 #include <binder/IPCThreadState.h>
 #include <binder/IServiceManager.h>

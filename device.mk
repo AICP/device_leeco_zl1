@@ -97,6 +97,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     LePref
 
+# ADB
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.adb.secure=0 \
+    persist.service.debuggable=1 \
+    persist.service.adb.enable=1 \
+    persist.sys.usb.config=mtp,adb
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 

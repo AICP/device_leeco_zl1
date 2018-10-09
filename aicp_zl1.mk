@@ -20,10 +20,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from zl1 device
 $(call inherit-product, device/leeco/zl1/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_zl1
+PRODUCT_NAME := aicp_zl1
 PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeEco
 PRODUCT_BRAND := LeEco

@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_zl1.mk
+    $(LOCAL_DIR)/aicp_zl1.mk

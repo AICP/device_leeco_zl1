@@ -1,0 +1,8 @@
+# We cant wait for all the patches be merged
+# so we pull the patches from gerrit.
+#
+75170 http://gerrit.aicp-rom.com frameworks/base
+227848 https://review.lineageos.org hardware/qcom/audio-caf/msm8996 -f
+230749 https://review.lineageos.org hardware/qcom/audio -f
+230750 https://review.lineageos.org hardware/qcom/media -f
+230271 https://review.lineageos.org vendor/qcom/opensource/cryptfs_hw -f

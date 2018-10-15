@@ -1,0 +1,11 @@
+# We cant wait for all the patches be merged
+# so we pull the patches from gerrit.
+#
+2731 https://review.gzospgzr.com hardware/qcom/power
+2732 https://review.gzospgzr.com hardware/qcom/power
+2733 https://review.gzospgzr.com hardware/qcom/power
+2734 https://review.gzospgzr.com hardware/qcom/power
+2735 https://review.gzospgzr.com hardware/qcom/power
+2736 https://review.gzospgzr.com hardware/qcom/power
+2737 https://review.gzospgzr.com hardware/qcom/power
+2738 https://review.gzospgzr.com hardware/qcom/power

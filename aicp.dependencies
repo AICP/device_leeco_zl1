@@ -2,35 +2,5 @@
  {
    "repository":  "device_leeco_msm8996-common",
    "target_path": "device/leeco/msm8996-common"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_interfaces_opensource_nfc",
-   "target_path": "vendor/nxp/opensource/interfaces/nfc",
-   "branch":      "lineage-16.0"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_opensource_external_libnfc-nci",
-   "target_path": "vendor/nxp/opensource/commonsys/external/libnfc-nci",
-   "branch":      "lineage-16.0"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_opensource_frameworks",
-   "target_path": "vendor/nxp/opensource/commonsys/frameworks",
-   "branch":      "lineage-16.0"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc",
-   "target_path": "vendor/nxp/opensource/commonsys/packages/apps/Nfc",
-   "branch":      "lineage-16.0"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_opensource_halimpl",
-   "target_path": "vendor/nxp/opensource/halimpl",
-   "branch":      "lineage-16.0"
- },
- {
-   "repository":  "LineageOS/android_vendor_nxp_opensource_hidlimpl",
-   "target_path": "vendor/nxp/opensource/hidlimpl",
-   "branch":      "lineage-16.0"
  }
 ]

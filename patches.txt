@@ -1,0 +1,9 @@
+# We cannot wait for all patches to be merged,
+# so we pull the patches from gerrit.
+#
+91715/3 http://gerrit.aicp-rom.com frameworks/base
+91716/2 http://gerrit.aicp-rom.com frameworks/base
+91717/2 http://gerrit.aicp-rom.com frameworks/base
+91718/2 http://gerrit.aicp-rom.com frameworks/base
+91719/2 http://gerrit.aicp-rom.com frameworks/base
+91720/2 http://gerrit.aicp-rom.com frameworks/base

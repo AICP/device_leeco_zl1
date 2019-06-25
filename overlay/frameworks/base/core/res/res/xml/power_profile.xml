@@ -31,7 +31,7 @@
         <value>2</value> <!-- Cluster 1 has 2 cores (cpu2, cpu3) -->
     </array>
 
-    <!-- Power consumption when CPU is suspended -->
+    <!-- Additional power consumption when CPU is in a kernel idle loop -->
     <item name="cpu.idle">0.1</item>
 
     <!-- Different CPU speeds as reported in
@@ -189,5 +189,34 @@
         <value>5</value>
         <value>3</value>
     </array>
+
+    <!-- Cellular modem related values.-->
+    <item name="modem.controller.sleep">0</item>
+
+    <!-- Idle current for modem in mA.-->
+    <item name="modem.controller.idle">105</item>
+
+    <!-- Rx current for modem in mA.-->
+    <item name="modem.controller.rx">175</item>
+
+    <!-- Tx current for modem in mA.-->
+    <array name="modem.controller.tx"> <!-- Strength 0 to 4 -->
+        <value>176</value>
+        <value>216</value>
+        <value>300</value>
+        <value>427</value>
+        <value>604</value>
+    </array>
+
+    <!-- Operating voltage for modem in mV.-->
+    <item name="modem.controller.voltage">3700</item>
+
+    <item name="bluetooth.controller.idle">0.01</item>
+    <!-- Rx current for bluetooth in mA.-->
+    <item name="bluetooth.controller.rx">8</item>
+    <!-- Tx current for bluetooth in mA-->
+    <item name="bluetooth.controller.tx">7</item>
+    <!-- Operating voltage for bluetooth in mV.-->
+    <item name="bluetooth.controller.voltage">3300</item>
 
 </device>

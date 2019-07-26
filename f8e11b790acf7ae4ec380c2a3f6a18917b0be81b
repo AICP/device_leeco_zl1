@@ -16,6 +16,24 @@
       "revId": "f8e11b790acf7ae4ec380c2a3f6a18917b0be81b",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "80dbe17e_251ed8c4",
+        "filename": "configs/thermal-engine.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2019-07-26T22:01:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "174381c6_0a16fa52",
+      "revId": "f8e11b790acf7ae4ec380c2a3f6a18917b0be81b",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
     }
   ]
 }

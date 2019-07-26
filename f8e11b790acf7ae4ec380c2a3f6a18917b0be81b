@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "174381c6_0a16fa52",
+        "filename": "configs/thermal-engine.conf",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1343
+      },
+      "writtenOn": "2019-07-26T20:32:20Z",
+      "side": 1,
+      "message": "Looks like a typo here - I guess it should be action_info instead of aaction_info",
+      "revId": "f8e11b790acf7ae4ec380c2a3f6a18917b0be81b",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}

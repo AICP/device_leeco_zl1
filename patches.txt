@@ -1,0 +1,2 @@
+252619/2 https://review.lineageos.org vendor/qcom/opensource/audio
+93095/1 https://gerrit.aicp-rom.com frameworks/base

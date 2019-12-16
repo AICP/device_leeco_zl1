@@ -38,6 +38,10 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 
 TARGET_KERNEL_CONFIG := lineage_zl1_defconfig
 
+# Legacy BLOB Support
+TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
+    /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1=28
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 

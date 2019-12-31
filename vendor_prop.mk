@@ -18,4 +18,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.qfp=false
+    ro.hardware.fingerprint=goodix \
+    ro.boot.fpsensor=goodix \
+    sys.fp.vendor=goodix \
+    persist.sys.fp.vendor=goodix

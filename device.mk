@@ -52,7 +52,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1
+    android.hardware.biometrics.fingerprint@2.1 \
+    libclang_rt.ubsan_standalone-aarch64-android
 
 # Init
 PRODUCT_COPY_FILES += \

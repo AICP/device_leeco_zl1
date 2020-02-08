@@ -38,6 +38,8 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 
 TARGET_KERNEL_CONFIG := lineage_zl1_defconfig
 
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+
 # Legacy BLOB Support
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /vendor/bin/gx_fpd=23

@@ -1,4 +1,6 @@
-# Copyright (c) 2009-2012, 2014-2015, The Linux Foundation. All rights reserved.
+#! /system/bin/sh
+
+# Copyright (c) 2009-2020, The Linux Foundation. All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
 # modification, are permitted provided that the following conditions are met:
@@ -25,20 +27,13 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on boot
-    chmod 0644 /dev/smartpa_f0_detect
+fpdb=/data/system/users/0/settings_fingerprint.xml
 
-    # NFC
-    chmod 0666 /dev/pn544
-    chown nfc nfc /dev/pn544
-    chmod 0666 /dev/p61
-    chown spi spi /dev/p61
-
-service goodix_script /vendor/bin/init.goodix.sh
-    class late_start
-    user system
-    oneshot
-
-on post-fs-data
-    # Nfc
-    mkdir /data/vendor/nfc 0770 nfc nfc
+while [ 1 != "$(getprop sys.boot_completed)" ]; do
+sleep 2s
+done
+if [ 1 == "$(getprop persist.sys.fp.goodix)" ]; then
+   if [ ! -z "$(grep "fingerId" $fpdb)" ]; then
+      am start -n com.android.settings/.Settings\$FingerprintSettingsActivity
+   fi
+fi

@@ -13,13 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1"
-#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.0-service.leeco_zl1"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service"
+#define LOG_VERBOSE "android.hardware.biometrics.fingerprint@2.1-service"
 
 #include <hardware/hw_auth_token.h>
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
+#include <cutils/properties.h>
 
 #include <inttypes.h>
 #include <unistd.h>
@@ -33,6 +34,10 @@ namespace fingerprint {
 namespace V2_1 {
 namespace implementation {
 
+// Supported fingerprint HAL version
+static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 0);
+static bool is_goodix = false;
+
 using RequestStatus =
         android::hardware::biometrics::fingerprint::V2_1::RequestStatus;
 
@@ -40,8 +45,16 @@ BiometricsFingerprint *BiometricsFingerprint::sInstance = nullptr;
 
 BiometricsFingerprint::BiometricsFingerprint() : mClientCallback(nullptr), mDevice(nullptr) {
     sInstance = this; // keep track of the most recent instance
+    char vend [PROPERTY_VALUE_MAX];
+    property_get("ro.boot.fpsensor", vend, nullptr);
 
-    mDevice = getWrapperService(BiometricsFingerprint::notify);
+    if (!strcmp(vend, "fpc")) {
+        is_goodix = false;
+        mDevice = openHal();
+    } else {
+        is_goodix = true;
+        mDevice = getWrapperService(BiometricsFingerprint::notify);
+    }
 
     if (!mDevice) {
         ALOGE("Can't open HAL module");
@@ -145,6 +158,7 @@ FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(
 
 Return<uint64_t> BiometricsFingerprint::setNotify(
         const sp<IBiometricsFingerprintClientCallback>& clientCallback) {
+    std::lock_guard<std::mutex> lock(mClientCallbackMutex);
     mClientCallback = clientCallback;
     // This is here because HAL 2.1 doesn't have a way to propagate a
     // unique token for its driver. Subsequent versions should send a unique
@@ -183,16 +197,13 @@ Return<RequestStatus> BiometricsFingerprint::cancel() {
 }
 
 #define MAX_FINGERPRINTS 100
-
 typedef int (*enumerate_2_0)(struct fingerprint_device *dev, fingerprint_finger_id_t *results,
         uint32_t *max_size);
-
 Return<RequestStatus> BiometricsFingerprint::enumerate()  {
     fingerprint_finger_id_t results[MAX_FINGERPRINTS];
     uint32_t n = MAX_FINGERPRINTS;
     enumerate_2_0 enumerate = (enumerate_2_0) mDevice->enumerate;
     int ret = enumerate(mDevice, results, &n);
-
     if (ret == 0 && mClientCallback != nullptr) {
         ALOGD("Got %d enumerated templates", n);
         for (uint32_t i = 0; i < n; i++) {
@@ -204,7 +215,6 @@ Return<RequestStatus> BiometricsFingerprint::enumerate()  {
             }
         }
     }
-
     return ErrorFilter(ret);
 }
 
@@ -222,7 +232,7 @@ Return<RequestStatus> BiometricsFingerprint::setActiveGroup(uint32_t gid,
         return RequestStatus::SYS_EINVAL;
     }
     int ret = mDevice->set_active_group(mDevice, gid, storePath.c_str());
-    if (ret > 0)
+    if ((ret > 0) && is_goodix)
         ret = 0;
     return ErrorFilter(ret);
 }
@@ -267,6 +277,12 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
         return nullptr;
     }
 
+    if (kVersion != device->version) {
+        // enforce version on new devices because of HIDL@2.1 translation layer
+        ALOGE("Wrong fp version. Expected %d, got %d", kVersion, device->version);
+        return nullptr;
+    }
+
     fingerprint_device_t* fp_device =
         reinterpret_cast<fingerprint_device_t*>(device);
 
@@ -282,6 +298,7 @@ fingerprint_device_t* BiometricsFingerprint::openHal() {
 void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     BiometricsFingerprint* thisPtr = static_cast<BiometricsFingerprint*>(
             BiometricsFingerprint::getInstance());
+    std::lock_guard<std::mutex> lock(thisPtr->mClientCallbackMutex);
     if (thisPtr == nullptr || thisPtr->mClientCallback == nullptr) {
         ALOGE("Receiving callbacks before the client callback is registered.");
         return;

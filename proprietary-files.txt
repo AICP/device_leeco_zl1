@@ -224,7 +224,7 @@ vendor/lib/libcppf.so
 
 # Fingerprint sensor
 bin/gx_fpd:vendor/bin/gx_fpd
-lib64/hw/fingerprint.msm8996.so:vendor/lib64/hw/fingerprint.msm8996.so
+lib64/hw/fingerprint.vendor.msm8996.so:vendor/lib64/hw/fingerprint.vendor.msm8996.so
 lib64/hw/gxfingerprint5118m.default.so:vendor/lib64/hw/gxfingerprint5118m.default.so
 lib64/libfp_client5118m.so:vendor/lib64/libfp_client5118m.so
 lib64/libfpnav5118m.so:vendor/lib64/libfpnav5118m.so

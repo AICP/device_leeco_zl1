@@ -1,0 +1,6 @@
+# We cannot wait for all patches to be merged,
+# so we pull the patches from gerrit.
+#
+#e.g. 67313/1 http://gerrit.aicp-rom.com prebuilts/clang/host/linux-x86
+98902/2 http://gerrit.aicp-rom.com frameworks/base
+98903/2 http://gerrit.aicp-rom.com frameworks/native

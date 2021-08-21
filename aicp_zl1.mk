@@ -42,3 +42,7 @@ TARGET_VENDOR := leeco
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Moshe Barash (mosimchah)"
+    
+
+PRODUCT_OVERRIDE_INFO := true
+PRODUCT_OVERRIDE_FINGERPRINT := LeEco/ZL1_NA/le_zl1:6.0.1/WEXNAOP5802101261S/letv01261206:user/release-keys

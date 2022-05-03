@@ -1,4 +1,6 @@
-type hal_fingerprint_zl1, domain, binder_in_vendor_violators;
+#type hal_fingerprint_zl1, domain, binder_in_vendor_violators;
+#temp
+type hal_fingerprint_zl1, domain;
 hal_server_domain(hal_fingerprint_zl1, hal_fingerprint)
 
 type hal_fingerprint_zl1_exec, exec_type, vendor_file_type, file_type;
@@ -19,7 +21,7 @@ allow hal_fingerprint_zl1 tee_device:chr_file { rw_file_perms };
 allow hal_fingerprint_zl1 uhid_device:chr_file { rw_file_perms };
 
 # /data/system/users/0/fpdata
-typeattribute hal_fingerprint_zl1 data_between_core_and_vendor_violators;
+#typeattribute hal_fingerprint_zl1 data_between_core_and_vendor_violators;
 allow hal_fingerprint_zl1 fingerprintd_data_file:dir { rw_dir_perms };
 allow hal_fingerprint_zl1 fingerprintd_data_file:file { create_file_perms };
 
